@@ -126,7 +126,6 @@ body > header {
 }
 
 aside img#calf {
-   display: block;
    width: 70%;
    margin: auto;
  }
@@ -290,6 +289,6 @@ footer h1 {
  }
 
  nav.footerNav a:hover {
-   background-color: #FF69B4; /* Hot Pink for hover effect */
-   color: white; /* Change text color on hover for better contrast */
+   background-color: #FF69B4;
+   color: white;
 }

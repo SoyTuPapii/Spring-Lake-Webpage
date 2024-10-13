@@ -1,0 +1,25 @@
+/* Home Page Mobile Styles */
+
+aside {
+    display: none;
+}
+
+/* About Page Mobile Styles */
+
+.about {
+    text-align: center;
+}
+
+#billBio, #jasonBio {
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.owners img {
+    width: 80%;
+    padding: 10px 0;
+}
+
+#billBio .bioText, #jasonBio .bioText {
+    margin: 0;
+}
