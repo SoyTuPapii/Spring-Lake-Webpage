@@ -90,6 +90,7 @@ body > header {
 
 
  /* All Page Body Styles  */
+
  body {
    display: flex;
    flex-direction: column;
@@ -141,6 +142,10 @@ aside img#calf {
    margin: 30px auto;
 }
 
+.about h1 {
+   color: #403831;
+}
+
 .about p {
    line-height: 2;
    margin-bottom: 20px;
@@ -151,9 +156,90 @@ aside img#calf {
    margin: 0;
    padding: 15px 0;
    text-align: center;
+   font-size: 2.5em;
+   color: #403831;
 }
 
- /* Footer Navigation Styles */
+
+.history {
+   background-color: beige;
+   padding: 20px;
+}
+
+ /* Bio Styles */
+
+#ownersHeader {
+   margin: 100px auto 0;
+   font-size: 2.5em;
+}
+
+.owners {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: auto;
+   gap: 60px;
+}
+
+.bioText {
+   display: flex;
+   flex-direction: column;
+}
+
+.owners h1 {
+   font-size: 2em;
+}
+
+.owners img {
+   width: 30%;
+   padding: 20px;
+}
+
+.owners p {
+   margin-top: 10px;
+}
+
+#billBio, #jasonBio {
+   display: flex;
+   flex-direction: row;
+   background-color: beige;
+   align-items: center;
+}
+
+ /* Bill Bio Styles */
+
+#billBio .bioText {
+   align-items: center;
+   margin-right: 20px;
+}
+
+/* Jason Bio Styles */
+
+#jasonBio .bioText {
+   align-items: center;
+   margin-left: 20px;
+}
+
+
+/* Farn Life Navigation Styles */
+
+.farmLife {
+   display: flex;
+   flex-direction: column;
+   background-color: beige;
+   padding: 20px;
+   margin: 100px auto 50px; 
+   text-align: center;
+}
+
+.farmLife h1 {
+   font-size: 2em;
+}
+
+.farmLife p {
+   margin: 10px 20px;
+}
+/* Footer Navigation Styles */
 
  nav.footerNav {
    display: flex;
@@ -172,7 +258,7 @@ footer h1 {
     padding: 20px;
  }
 
- body > footer address {
+ body footer address {
     color: white;
     background-color: #333;
     text-align: center;
