@@ -14,38 +14,28 @@ li, main, nav, ol, p,section, span, ul {
    box-sizing: border-box;
 }
 
-/* main structure styles */
+/* HTML styles */
 
 html {
    font-family: Verdana, Geneva, Arial, sans-serif;
-    background-color: lightblue;
+    background-color: #E0FFF0;
     margin: 0;
-}
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0 auto;
-    max-width: 960px;
-    min-width: 640px;
-    width: 95%;
- }
- 
- .content {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
 }
 
 
 
 /* Header styles */
 
+body > header {
+   position: relative;
+}
+
  body > header > img {
-    display: block;
-    width: 100%;
+   display: block;
+   width: 100%;
+   max-height: 600px;
+   height: auto;
+   object-fit: cover;
  }
 
 
@@ -53,30 +43,41 @@ body {
  /* Horizontal Navigation Styles */
  
  nav.horizontalNav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0 0 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   list-style: none;
+   padding: 0 0 20px;
 }
 
  nav.horizontalNav li {
-    flex: 1;
+   flex: 1;
  }
 
  nav.horizontalNav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: aquamarine;
-    text-decoration: none;
-    color: black;
-    border: 2px solid #333; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   height: 100%;
+   width: 100%;
+   text-decoration: none;
+   color: black;
+   box-sizing: border-box;
  }
 
- nav ul {
+ nav.horizontalNav a:hover {
+   background-color: #E6E6FA;
+   color: black;
+ }
+
+ nav.horizontalNav ul {
    display: flex;
+   justify-content: center;
    width: 100%;
    padding: 0;
    margin: 0;
@@ -86,9 +87,28 @@ body {
  nav ul li a {
    font-weight: bolder;
  }
- 
- /* Body Styles  */
 
+
+ /* All Page Body Styles  */
+ body {
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   margin: 0 auto;
+   width: 100%;
+   min-height: 100vh;
+}
+
+ /* Home Page Body Styles  */
+ 
+ .content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex: 1;
+   width: 80%;
+   margin: 30px auto;
+}
  article.leftText {
    flex: 2;
    margin: 40px 0;
@@ -106,16 +126,44 @@ body {
 
 aside img#calf {
    display: block;
-   width: 100%;
+   width: 70%;
    margin: auto;
  }
 
+
+ /* About Page Body Styles  */
+
+.about {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   width: 80%;
+   margin: 30px auto;
+}
+
+.about p {
+   line-height: 2;
+   margin-bottom: 20px;
+}
+
+.aboutHead {
+   width: 100%;
+   margin: 0;
+   padding: 15px 0;
+   text-align: center;
+}
 
  /* Footer Navigation Styles */
 
  nav.footerNav {
    display: flex;
    width: 100%;
+}
+
+nav.footerNav ul {
+   display: flex;
+   width: 100%;
+   list-style: none;
 }
 
 footer h1 {
@@ -138,10 +186,10 @@ footer h1 {
    display: flex;
     flex: 1;
     justify-content: center;
-    align-items: center; /* Center the text vertically */
+    align-items: center;
     width: 100%;
     padding: 20px 0;
-    background-color: aquamarine;
+    background-color: #F5F5DC;
     text-decoration: none;
     color: black;
     border: 2px solid #333; 
@@ -154,3 +202,8 @@ footer h1 {
     height: auto;
     margin-right: 5px;
  }
+
+ nav.footerNav a:hover {
+   background-color: #FF69B4; /* Hot Pink for hover effect */
+   color: white; /* Change text color on hover for better contrast */
+}
