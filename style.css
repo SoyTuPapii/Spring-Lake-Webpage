@@ -220,7 +220,8 @@ aside img#calf {
 }
 
 
-/* Farn Life Navigation Styles */
+
+/* Farm Life Body Styles */
 
 .farmLife {
    display: flex;
@@ -238,6 +239,117 @@ aside img#calf {
 .farmLife p {
    margin: 10px 20px;
 }
+
+
+/* Our Cows Page Styles */
+
+
+.holstein {
+   display: flex;
+   flex-direction: column;
+}
+
+.cowInfo {
+   display: flex;
+   align-items: center;
+   margin: 50px 200px;
+}
+
+.holstein > .cowInfo > p {
+   flex: 2;
+   margin: 20px 50px;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   font-size: 1.2em;
+}
+
+#holsteinPic {
+   flex: 1;
+   width: 200px;
+   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.cows {
+   display: flex;
+   flex-direction: column;
+   line-height: 2;
+   background-color: beige;
+   padding-top: 30px;
+   margin-bottom: 100px;
+}
+
+.cowsHead {
+   font-size: 3em;
+   text-align: center;
+}
+
+/* Our Cows Page Characteristics Section */
+
+.characteristics {
+   display: flex;
+   flex-direction: column;
+   background-color: #FAF9F6;
+   border: thick solid black;
+   margin: 0 300px;
+   align-items: center;
+}
+
+#characteristicsHead {
+   font-size: 2em;
+   padding-top: 20px;
+   text-align: center;
+   border-bottom: thick double black;
+   width: 100%;
+}
+
+#charList {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+}
+
+#charList li {
+   border-bottom: thick double black;
+   padding: 20px;
+   width: 100%;
+}
+
+#charList li:last-of-type {
+   border-bottom: none
+}
+
+#charList li strong {
+   font-size: 1.2em;
+}
+
+.characteristics > img {
+   border: thin solid black;
+   width: 55%;
+   align-self: flex-end;
+   margin: 0 40px 40px 0;
+}
+
+/* Our Cows Page Bottom Section */
+
+.holsteinLove {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 50px 200px;
+   padding: 50px;
+   background-color: #FAF9F6;
+   border: thick solid black;
+}
+
+.holsteinLove > h1 {
+   font-size: 2em;
+}
+
+.holsteinLove > p {
+   font-size: 1.2em  ;
+}
+
 /* Footer Navigation Styles */
 
  nav.footerNav {
@@ -252,15 +364,10 @@ nav.footerNav ul {
 }
 
 footer h1 {
+   border-top: thin solid black;
     text-align: center;
     font-size: larger;
     padding: 20px;
- }
-
- body footer address {
-    color: white;
-    background-color: #333;
-    text-align: center;
  }
 
  nav.footerNav li {
@@ -287,6 +394,12 @@ footer h1 {
     height: auto;
     margin-right: 5px;
  }
+
+ body footer address {
+   color: white;
+   background-color: #333;
+   text-align: center;
+}
 
  nav.footerNav a:hover {
    background-color: #FF69B4;

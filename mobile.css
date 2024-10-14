@@ -23,3 +23,24 @@ aside {
 #billBio .bioText, #jasonBio .bioText {
     margin: 0;
 }
+
+/* Cows Page Mobile Styles */
+
+.cows{
+    margin: auto;
+}
+
+.characteristics {
+    margin: auto;
+}
+
+img {
+    display: none;
+}
+
+/* Footer Mobile Styles */
+
+footer {
+    margin: auto;
+    width: 100%;
+}
