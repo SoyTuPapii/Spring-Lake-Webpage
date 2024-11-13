@@ -1,6 +1,6 @@
 /* Home Page Mobile Styles */
 
-aside {
+aside, #milkingCountdown {
     display: none;
 }
 
@@ -30,6 +30,15 @@ aside {
     margin: auto;
 }
 
+.cowInfo {
+    margin: auto;
+}
+
+.cowInfo p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
 .characteristics {
     margin: auto;
 }
@@ -37,6 +46,11 @@ aside {
 img {
     display: none;
 }
+
+.holsteinLove {
+    margin: 20px;
+    padding: 20px;
+  }
 
 /* Footer Mobile Styles */
 
