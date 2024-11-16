@@ -365,6 +365,30 @@ aside img#calf {
    font-size: 1.2em  ;
 }
 
+
+/* Contact Page Styles */
+form#contact {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+form#contact > fieldset {
+   background-color: rgb(241, 232, 181);
+   border-radius: 20px;
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
+div.formRow {
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1;
+}
+
 /* Footer Navigation Styles */
 
  nav.footerNav {
