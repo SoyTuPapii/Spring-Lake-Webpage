@@ -21,8 +21,8 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Contact Us</h1>
+    <section id="contactSection">
+        <h1 id="contactHead">Contact Us</h1>
         <p>For questions about any of our products or help with placing your order, don't hesitate to contact us.</p>
         <form id="contact" action="#" method="post">
             <fieldset id="custInfo">
@@ -40,6 +40,11 @@
                 <div class="formRow">
                     <label for="Phone">Phone</label>
                     <input name="custPhone" id="Phone" type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" title="Please enter a valid phone number, e.g., 123-456-7890 or 1234567890." required>
+                </div>
+
+                <div class="formRow fullWidth">
+                    <label for="Message">Message</label>
+                    <textarea name="custMsg" id="Message" type="text" required></textarea>
                 </div>
 
             </fieldset>

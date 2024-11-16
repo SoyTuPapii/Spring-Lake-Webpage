@@ -367,14 +367,23 @@ aside img#calf {
 
 
 /* Contact Page Styles */
+h1#contactHead {
+   text-align: center;
+}
+
+#contactSection > p {
+   text-align: center;
+}
+
 form#contact {
    display: flex;
-   flex-flow: row wrap;
+   flex-flow: column wrap;
+   max-width: 80%;
+   margin: auto;
 }
 
 form#contact > fieldset {
-   background-color: rgb(241, 232, 181);
-   border-radius: 20px;
+   background-color: #F5F5DC;
    display: flex;
    flex-flow: row wrap;
    flex: 1 1 300px;
@@ -385,8 +394,20 @@ form#contact > fieldset {
 
 div.formRow {
    display: flex;
-   flex-flow: row wrap;
+   flex-direction: column;
    flex: 1;
+}
+
+div.formRow.fullWidth {
+   flex: 1 0 100%;
+}
+
+textarea#Message {
+   min-height: 150px;
+}
+
+#buttons {
+   text-align: center;
 }
 
 /* Footer Navigation Styles */
