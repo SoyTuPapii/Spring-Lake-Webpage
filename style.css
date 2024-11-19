@@ -39,7 +39,7 @@ body > header {
  }
 
 #milkingCountdown {
-   color: darkgrey;
+   color: black;
    background-color: #F5F5DC;
    border: thin solid black;
    text-align: center;
@@ -367,18 +367,24 @@ aside img#calf {
 
 
 /* Contact Page Styles */
+#contactSection {
+   margin: 40px 0;
+}
+
 h1#contactHead {
+   font-size: 2em;
    text-align: center;
 }
 
 #contactSection > p {
    text-align: center;
+   margin: 20px;
 }
 
 form#contact {
    display: flex;
    flex-flow: column wrap;
-   max-width: 80%;
+   max-width: 60%;
    margin: auto;
 }
 
@@ -392,22 +398,48 @@ form#contact > fieldset {
    margin: 10px;
 }
 
+#topForm {
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1;
+   gap: 20px;
+}
+
 div.formRow {
    display: flex;
    flex-direction: column;
    flex: 1;
+   gap: 5px;
 }
 
-div.formRow.fullWidth {
+label {
+   font-size: 1.2em;
+}
+
+div.formRow input, div.formRow textarea {
+   border: 2px solid black;
+   padding: 5px;
+}
+
+div#bottomForm {
+   display: flex;
    flex: 1 0 100%;
+   margin-top: 10px;
 }
 
 textarea#Message {
    min-height: 150px;
 }
 
+
 #buttons {
-   text-align: center;
+   text-align: center; 
+}
+
+#submitButton, #resetButton {
+   margin: 15px;
+   padding: 5px;
+   font-size: 1.2em;
 }
 
 /* Footer Navigation Styles */

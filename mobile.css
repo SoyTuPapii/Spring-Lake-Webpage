@@ -44,6 +44,14 @@ img {
     padding: 20px;
   }
 
+
+/* Contact Page Mobile Styles */
+
+
+form#contact {
+    max-width: 80%;
+}
+
 /* Footer Mobile Styles */
 
 footer {
