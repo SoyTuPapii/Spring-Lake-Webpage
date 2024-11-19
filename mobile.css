@@ -26,11 +26,7 @@ aside, #milkingCountdown {
 
 /* Cows Page Mobile Styles */
 
-.cows{
-    margin: auto;
-}
-
-.cowInfo {
+.cows, .cowInfo, .characteristics {
     margin: auto;
 }
 
@@ -38,10 +34,6 @@ aside, #milkingCountdown {
     font-size: 1rem;
     margin: 10px 0;
   }
-
-.characteristics {
-    margin: auto;
-}
 
 img {
     display: none;
@@ -55,6 +47,63 @@ img {
 /* Footer Mobile Styles */
 
 footer {
-    margin: auto;
     width: 100%;
+}
+
+
+/* Dropdown menu styles */
+
+/* Hamburger icon */
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+    margin: 15px;
+}
+
+
+#menuToggle span {
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* Dropdown */
+#dropdownMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+
+#dropdownMenu li {
+    border-bottom: 1px solid #333;
+}
+
+#dropdownMenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#dropdownMenu li a:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* Show Dropdown on Toggle */
+#dropdownMenu.show {
+    display: block;
 }

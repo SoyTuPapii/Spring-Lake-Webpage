@@ -6,14 +6,23 @@
     <title>About Spring Lake Farms</title>
     <link href="style.css" rel="stylesheet" />
     <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 600px)" />
-    <script src="milk.js" defer></script>
+    <script src="javaMenu.js" defer></script>
 
 </head>
 <body>
     <header>
         <img src="farm_rainbow.jpg" alt="Spring Lake Farms" />
+
+        <!-- Mobile Menu Toggle -->
+        <div id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Main Navigation -->
         <nav class="horizontalNav">
-            <ul>
+            <ul id="dropdownMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="cows.html">Our Cows</a></li>
