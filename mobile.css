@@ -10,18 +10,22 @@ aside, #milkingCountdown {
     text-align: center;
 }
 
-#billBio, #jasonBio {
+.ownerBio {
     flex-direction: column;
     padding: 10px 10px;
 }
 
-.owners img {
+.ownerBio img {
     width: 80%;
     padding: 10px 0;
 }
 
-#billBio .bioText, #jasonBio .bioText {
-    margin: 0;
+#billBio .bioText {
+    margin-right: 0;
+}
+
+#jasonBio .bioText {
+    margin-left: 0;
 }
 
 /* Cows Page Mobile Styles */
@@ -44,6 +48,12 @@ img {
     padding: 20px;
   }
 
+/* Recipe Page Mobile Styles */
+
+.recipeHeader img {
+    display: block;
+    max-width: 60%;
+}
 
 /* Contact Page Mobile Styles */
 
