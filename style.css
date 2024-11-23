@@ -380,45 +380,66 @@ aside img#calf {
    padding-top: 30px;
 }
 
-.recipe {
+.recipeCard {
    background-color: #F5F5DC;
+   border: thin solid black;
    display: flex;
    flex-direction: column;
-   padding: 30px 50px;
-   margin: 50px 0;
+   margin: 50px auto;
 }
 
+.servings {
+   text-align: center;
+   font-style: italic;
+   font-weight: lighter;
+   color: gray;
+}
 .recipeDiscription {
+   margin-top: 10px;
    line-height: 2;
    text-align: center;
 }
 
 
-.recipe h3 {
+.recipeCard h3 {
    font-size: 2em;
    text-align: center;  
    margin: 20px auto;
 }
 
-.recipe h4 {
+.recipeCard h4 {
    font-size: 1.5em;
    padding: 30px 0;
 }
 
-.ingredients li, .instructions li {
+.ingredients li, .instructions li, .notes li {
    margin: 10px 0 10px 20px;
    line-height: 2;
 }
 
+.recipeHeader {
+   display: flex;
+   flex-direction: column;
+   background-color: #fafafa;
+   padding: 30px 50px;
+   border-bottom: thick solid black;
+}
 
-/* Butter Recipe */
-#butterPic {
-   max-width: 10%;
+.recipeHeader img {
+   max-width: 20%;
    border: 8px solid #fff;
    border-radius: 200px;
    align-self: center;
+   margin-top: 10px;
 }
 
+.recipeContent {
+   padding: 30px 50px;
+}
+
+.notes {
+
+}
 
 /* Contact Page Styles */
 #contactSection {
