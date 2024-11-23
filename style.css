@@ -147,6 +147,11 @@ aside img#calf {
 
  /* About Page Body Styles  */
 
+#historyBox, .ownerBio, #farmLifeBox {
+   border: thin solid lightgray;
+}
+ 
+
 .about {
    display: flex;
    flex-direction: column;
@@ -174,7 +179,7 @@ aside img#calf {
 }
 
 
-.history {
+#historyBox {
    background-color: beige;
    padding: 20px;
 }
@@ -194,21 +199,23 @@ aside img#calf {
    gap: 60px;
 }
 
+
+.ownerBio img {
+   border: thick double black;
+   width: 30%;
+   margin: 20px;
+}
+
+.owners h3 {
+   font-size: 2em;
+}
+
 .bioText {
    display: flex;
    flex-direction: column;
 }
 
-.owners h1 {
-   font-size: 2em;
-}
-
-.owners img {
-   width: 30%;
-   padding: 20px;
-}
-
-.owners p {
+.bioText p {
    margin-top: 10px;
 }
 
@@ -237,7 +244,7 @@ aside img#calf {
 
 /* Farm Life Body Styles */
 
-.farmLife {
+#farmLifeBox {
    display: flex;
    flex-direction: column;
    background-color: beige;
@@ -246,11 +253,11 @@ aside img#calf {
    text-align: center;
 }
 
-.farmLife h1 {
+#farmLifeBox h1 {
    font-size: 2em;
 }
 
-.farmLife p {
+#farmLifeBox p {
    margin: 10px 20px;
 }
 
@@ -426,8 +433,8 @@ aside img#calf {
 }
 
 .recipeHeader img {
-   max-width: 20%;
-   border: 8px solid #fff;
+   max-width: 13%;
+   border: 8px solid darkgray;
    border-radius: 200px;
    align-self: center;
    margin-top: 10px;
@@ -437,9 +444,6 @@ aside img#calf {
    padding: 30px 50px;
 }
 
-.notes {
-
-}
 
 /* Contact Page Styles */
 #contactSection {
