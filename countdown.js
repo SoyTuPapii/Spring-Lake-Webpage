@@ -1,5 +1,7 @@
 "use-strict";
 
+// Script to determine when the next milking time is and continuesly update it
+
 // Determine the next milking period based on the current time
 function updateMilkingCountdown() {
     const now = new Date();
