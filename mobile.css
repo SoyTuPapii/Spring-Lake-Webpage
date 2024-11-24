@@ -55,11 +55,20 @@ img {
     max-width: 60%;
 }
 
+form#recipeForm {
+    max-width: 80%;
+}
+
+#RecipeInfo #bottomForm {
+    flex-flow: column nowrap;
+}
+
 /* Contact Page Mobile Styles */
 
 
 form#contact {
     max-width: 80%;
+    margin: auto;
 }
 
 /* Footer Mobile Styles */

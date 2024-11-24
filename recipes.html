@@ -6,6 +6,13 @@
     <title>Spring Lake Farms Recipes</title>
     <link href="style.css" rel="stylesheet" />
     <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 600px)" />
+    <style>
+        #recipeForm label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
     <script src="javaMenu.js" defer></script>
 
 </head>
@@ -156,6 +163,58 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section id="recipeFormSection">
+            <h1 id="recipeSubmitHead">Submit a Recipe!</h1>
+            <p>Have your own recipe you would like to share? Feel free to enter it below and have it 
+                potentially featured on our site!
+            </p>
+            <form id="recipeForm" action="#" method="post">
+                <fieldset id="RecipeInfo">
+                    <div id="topForm">
+                        <div class="formRow">
+                            <label for="DishName">Your Name</label>
+                            <input name="custName" id="DishName" type="text" required>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="RecipeEmail">Your Email</label>
+                            <input name="SubmitterEmail" id="RecipeEmail" type="email" required>
+                        </div>
+    
+                        <div class="formRow">
+                            <label for="DishName">Recipe Name</label>
+                            <input name="RecipeName" id="DishName" type="text" required>
+                        </div>
+    
+                    </div>
+                    <div id="bottomForm">
+    
+                        <div class="formRow fullWidth">
+                            <label for="IngredientsBox">Recipe Ingredients</label>
+                            <textarea name="custMsg" id="IngredientsBox" type="text" required></textarea>
+                        </div>
+
+                        <div class="formRow fullWidth">
+                            <label for="InstructionsBox">Recipe Instructions</label>
+                            <textarea name="custMsg" id="InstructionsBox" type="text" required></textarea>
+                        </div>
+
+                        <div class="formRow fullWidth">
+                            <label for="NotesBox">Notes</label>
+                            <textarea name="custMsg" id="Notes" type="text"></textarea>
+                        </div>
+                    </div>
+    
+                </fieldset>
+    
+                <div id="buttons">
+                    <input type="submit" value="Submit" id="submitButton"/>
+                    <input type="reset" value="Cancel" id="resetButton"/>
+                 </div>
+    
+            </form>
         </section>
     </main>
     <footer>

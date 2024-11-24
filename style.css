@@ -451,6 +451,45 @@ aside img#calf {
    padding: 30px 50px;
 }
 
+/* Recipe Form Styles */
+#recipeFormSection {
+   margin: 40px 0;
+}
+
+h1#recipeSubmitHead {
+   font-size: 2.5em;
+   text-align: center;
+}
+
+#recipeFormSection > p {
+   text-align: center;
+   margin: 20px;
+}
+
+form#recipeForm {
+   display: flex;
+   flex-flow: column wrap;
+   max-width: 60%;
+   margin: auto;
+}
+
+form#recipeForm > fieldset {
+   background-color: #F5F5DC;
+   display: flex;
+   flex-flow: row wrap;
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+}
+
+div#bottomForm {
+   gap: 10px;
+}
+
+textarea#IngredientsBox, textarea#InstructionsBox, textarea#Notes {
+   min-height: 150px;
+}
+
 
 /* Contact Page Styles */
 #contactSection {
@@ -467,10 +506,10 @@ h1#contactHead {
    margin: 20px;
 }
 
-form#contact {
+form#recipeForm {
    display: flex;
    flex-flow: column wrap;
-   max-width: 60%;
+   max-width: 80%;
    margin: auto;
 }
 
@@ -478,7 +517,6 @@ form#contact > fieldset {
    background-color: #F5F5DC;
    display: flex;
    flex-flow: row wrap;
-   flex: 1 1 300px;
    font-size: 0.85em;
    padding: 10px;
    margin: 10px;
