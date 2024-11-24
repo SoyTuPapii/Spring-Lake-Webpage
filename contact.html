@@ -38,30 +38,37 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contact Section -->
     <section id="contactSection">
         <h1 id="contactHead">Contact Us</h1>
         <p>For questions about any of our products or help with placing your order, don't hesitate to contact us.</p>
         <form id="contact" action="#" method="post">
             <fieldset id="custInfo">
                 <div id="topForm">
+                    <!-- Name Input -->
                     <div class="formRow">
                         <label for="Name">Full Name</label>
                         <input name="custName" id="Name" type="text" required>
                     </div>
 
+                    <!-- Email Input -->
                     <div class="formRow">
                         <label for="Email">Email</label>
                         <input name="custMail" id="Email" type="email" required>
                     </div>
 
+                    <!-- Phone Number Input -->
                     <div class="formRow">
                         <label for="Phone">Phone</label>
                         <input name="custPhone" id="Phone" type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" title="Please enter a valid phone number, e.g., 123-456-7890 or 1234567890." maxlength="16" required>
                     </div>
 
                 </div>
+
                 <div id="bottomForm">
 
+                    <!-- Message Textarea -->
                     <div class="formRow fullWidth">
                         <label for="Message">Message</label>
                         <textarea name="custMsg" id="Message" type="text" required></textarea>
@@ -70,6 +77,7 @@
 
             </fieldset>
 
+            <!-- Form Buttons for submission and reset -->
             <div id="buttons">
                 <input type="submit" value="Submit" id="submitButton"/>
                 <input type="reset" value="Cancel" id="resetButton"/>
@@ -77,8 +85,10 @@
 
         </form>
     </section>
+
     <footer>
         <h1>Follow Us!</h1>
+        <!-- Footer Navigation with social media links -->
         <nav class="footerNav">
             <ul>
                 <li id="facebook">
